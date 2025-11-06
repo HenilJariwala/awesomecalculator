@@ -1,20 +1,6 @@
 [build-system]
-requires = ["setuptools>=69", "wheel"]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
 build-backend = "setuptools.build_meta"
-
-[project]
-name = "awesomecalculator-henil"       
-version = "1.0.0"
-description = "Awesome calculator demo package"
-readme = "README.md"
-requires-python = ">=3.10"
-authors = [{ name = "Henil Jariwala" }]
-license = { file = "LICENSE" }
-
-
-[tool.setuptools]
-package-dir = { "" = "src" }
-
-[tool.setuptools.packages.find]
-where = ["src"]
-include = ["calculator*"]               
